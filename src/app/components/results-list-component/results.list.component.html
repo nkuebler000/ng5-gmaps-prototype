@@ -1,0 +1,11 @@
+<div class="tab-content" aria-live="polite">
+    <div role="tabpanel" class="tab-pane fade active in" id="fah-tabpanel0">
+       <div class="location-list">
+          <result *ngFor="let hospital of Hospitals" [hospital]="hospital" (notifyPinClick)="onNotifyPinClick($event)"></result>
+          <div class="load-more" [ngClass]="{hidden: !Hospitals || Hospitals.length === TotalResults || Hospitals.length === 0}"> 
+              <a href="#" (click)="onLoadMoreClick($event)" >Load More +</a> 
+          </div>
+          <div class="no-results" [ngClass]="{visible: TotalResults === 0}">No results were found. Please try another location.</div>
+        </div>
+    </div>
+ </div>

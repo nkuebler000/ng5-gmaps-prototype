@@ -1,0 +1,97 @@
+
+<script>
+  //this needs to come from the CMS - used for filtering hospitals - already exists
+  FindAHospitalSettings.HospitalTypes = [
+    {
+      id: '16d0663f-0874-43e6-8511-481c0b8cef46',
+      text: 'All Hospitals',
+      badge: 'A'
+    },
+    {
+      id: 'f24ffaa3-babd-438f-a47a-e501ead66b43',
+      text: 'Primary Care',
+      badge: 'P'
+    },
+    {
+      id: '23ed4a38-36b9-4764-9a2d-21a542c711c8',
+      text: 'Specialty Care',
+      badge: 'S'
+    },
+    {
+      id: '1149c3f3-01c2-426f-8198-18582f89ebe2',
+      text: 'Emergency Care',
+      badge: 'E'
+    },
+    {
+      id: '676a3de6-1da1-4f0e-8808-05f2fd7d12af',
+      text: 'Boarding & Grooming',
+      badge: 'B'
+    },
+    {
+      id: '9ae50023-4f7c-44a4-bc67-4db786b75b0d',
+      text: 'Cat Only',
+      badge: 'C'
+    }
+  ];
+
+  //this needs to come from the back end - use VCA.Common.Constants.Settings.FindAHospital.AllHospitalsType
+  FindAHospitalSettings.AllHospitalsType = '16d0663f-0874-43e6-8511-481c0b8cef46';
+
+  //this needs to come from the CMS - used for suffixing the user's query to ensure that only canadian locations are displayed on the map
+  FindAHospitalSettings.Country = 'Canada';
+
+  //this needs to come from the CMS - used for the initial market to display 
+  //the haversine function is used to calculate the smallest distance between each market and the user's geoip located lat lng
+  //to hopefully display them an appropriate market when the page loads
+  FindAHospitalSettings.UserLat = 'UserLat';
+  FindAHospitalSettings.UserLng = 'UserLng';
+  FindAHospitalSettings.MajorMarkets = [
+    {
+      Name: 'Calgary, AB, Canada',
+      Latitude: 51.0501100,
+      Longitude: -114.0852900
+    },
+    {
+      Name: 'Edmonton, AB, Canada',
+      Latitude: 53.545883,
+      Longitude: -113.490112
+    },
+    {
+      Name: 'Vancouver, BC, Canada',
+      Latitude: 49.246292,
+      Longitude: -123.116226
+    },
+    {
+      Name: 'Victoria, BC, Canada',
+      Latitude: 48.407326,
+      Longitude: -123.329773
+    },
+    {
+      Name: 'London, ON, Canada',
+      Latitude: 42.988934,
+      Longitude: -81.248574
+    },
+    {
+      Name: 'Toronto, ON, Canada',
+      Latitude: 43.639217,
+      Longitude: -79.400414
+    },
+    {
+      Name: 'Ottawa, ON, Canada',
+      Latitude: 45.425533,
+      Longitude: -75.692482
+    },
+    {
+      Name: 'Saskatoon, SK, Canada',
+      Latitude: 52.132854,
+      Longitude: -106.631401
+    }
+  ];
+</script>
+<script type="text/javascript" src="inline.bundle.js"></script>
+<script type="text/javascript" src="polyfills.bundle.js"></script>
+<script type="text/javascript" src="styles.bundle.js"></script>
+<script type="text/javascript" src="vendor.bundle.js"></script>
+<script type="text/javascript" src="main.bundle.js"></script>
+
+

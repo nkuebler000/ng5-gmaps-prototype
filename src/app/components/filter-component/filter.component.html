@@ -1,0 +1,14 @@
+<div class="fa-tabs">
+    <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" 
+            *ngFor="let filterItem of filterItems; let i = index" 
+            [ngClass]="{'active' : selectedFilters.indexOf(filterItem.id) > -1}"
+            >
+            <a href="#" (click)="filterItemClick($event, filterItem.id)" class="trigger-click" role="tab" aria-expanded="true">
+                <span class="fa-badge" aria-hidden="true" role="presentation">{{filterItem.badge}}</span>
+                <span class="fa-text">{{filterItem.text}}</span>
+            </a>
+        </li>
+    </ul>
+</div>
+

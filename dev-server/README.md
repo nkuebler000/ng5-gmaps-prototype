@@ -1,0 +1,2 @@
+To start the server:
+node dev-server/dev-server.js --host="http://ca.cm.qa.preview.vca.webstagesite.com" --url="/find-a-hospital" --provider="providers/fah/provider.js" --webpackConfig="webpack.config.js" --port=3000

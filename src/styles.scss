@@ -1,0 +1,350 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.row {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.fa-hospital2 {
+  padding-bottom: 30px;
+  border-top: 1px solid #d3d3d3; }
+  @media (min-width: 768px), print {
+    .fa-hospital2 {
+      padding-bottom: 50px; } }
+  .fa-hospital2 .module {
+    margin-left: 4.16667%;
+    position: relative;
+    float: left;
+    width: 91.66667%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    position: static; }
+    @media (min-width: 768px) {
+      .fa-hospital2 .module {
+        margin-left: 2.75%; } }
+    @media (min-width: 768px) {
+      .fa-hospital2 .module {
+        float: left;
+        width: 94.41667%; } }
+    .fa-hospital2 .module header {
+      margin-bottom: 20px; }
+      .fa-hospital2 .module header form h1 {
+        padding-top: 11px;
+        padding-bottom: 11px;
+        vertical-align: top;
+        font-weight: 600;
+        font-size: 27.5px;
+        font-size: 1.71875rem; }
+        @media (min-width: 768px), print {
+          .fa-hospital2 .module header form h1 {
+            /*display: inline-block;*/
+            line-height: 100%; } }
+        .fa-hospital2 .module header form h1 p {
+          display: inline-block;
+          font-size: 25px;
+          font-size: 1.5625rem; }
+        .fa-hospital2 .module header form h1 .zipcode-label {
+          font-weight: bold; }
+      .fa-hospital2 .module header form .form-group {
+        position: relative;
+        margin-bottom: 20px; }
+        @media (min-width: 768px), print {
+          .fa-hospital2 .module header form .form-group {
+            margin-bottom: 0; } }
+        @media (min-width: 768px), print {
+          .fa-hospital2 .module header form .form-group.search-group {
+            display: inline-block;
+            min-width: 50%;
+            /*margin-left: 20px;*/
+            width: 50%; } }
+        @media (min-width: 768px), print {
+          .fa-hospital2 .module header form .form-group.search-group input.search {
+            height: 60px;
+            border: none;
+            font-size: 26px;
+            font-size: 1.625rem; }
+            .fa-hospital2 .module header form .form-group.search-group input.search::-webkit-input-placeholder {
+              color: #3f3f3f;
+              line-height: 1.5;
+              font-size: 26px;
+              font-size: 1.625rem; }
+            .fa-hospital2 .module header form .form-group.search-group input.search:-moz-placeholder {
+              /* Firefox 18- */
+              color: #3f3f3f;
+              line-height: 1.5;
+              font-size: 26px;
+              font-size: 1.625rem; }
+            .fa-hospital2 .module header form .form-group.search-group input.search::-moz-placeholder {
+              /* Firefox 19+ */
+              color: #3f3f3f;
+              /*line-height: $lineheight;*/
+              font-size: 26px;
+              font-size: 1.625rem;
+              opacity: 1; }
+            .fa-hospital2 .module header form .form-group.search-group input.search:-ms-input-placeholder {
+              color: #3f3f3f;
+              line-height: 1.5;
+              font-size: 26px;
+              font-size: 1.625rem; } }
+        .fa-hospital2 .module header form .form-group.search-group input.search::-ms-clear {
+          display: none; }
+      .fa-hospital2 .module header form .fa-search {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        color: #aaaaaa;
+        margin-top: 5px;
+        font-size: 30px;
+        font-size: 1.875rem; }
+        @media (min-width: 0px) and (max-width: 767px) {
+          .fa-hospital2 .module header form .fa-search {
+            font-size: 25px;
+            font-size: 1.5625rem;
+            margin-top: 0px; } }
+      @media (min-width: 768px), print {
+        .fa-hospital2 .module header form .filter {
+          display: none; } }
+    .fa-hospital2 .module .nav-tabs {
+      position: relative;
+      margin-bottom: 20px;
+      margin-top: 20px; }
+      @media (min-width: 0px) and (max-width: 767px) {
+        .fa-hospital2 .module .nav-tabs {
+          display: table;
+          width: 100%;
+          padding-top: 30px; }
+          .fa-hospital2 .module .nav-tabs > li {
+            display: table-cell;
+            text-align: center;
+            float: none;
+            position: static; }
+            .fa-hospital2 .module .nav-tabs > li.active .fa-text {
+              position: absolute;
+              display: block;
+              width: 100%;
+              left: 0;
+              top: -5px;
+              text-align: center;
+              font-weight: 600; }
+            .fa-hospital2 .module .nav-tabs > li.active .fa-badge {
+              /*color: #F37021;
+                        border-color: #F37021;*/ }
+            .fa-hospital2 .module .nav-tabs > li > a {
+              position: static;
+              margin: 0;
+              padding: 0; }
+              .fa-hospital2 .module .nav-tabs > li > a > span {
+                margin: 0; }
+          .fa-hospital2 .module .nav-tabs .fa-text {
+            display: none; } }
+  .fa-hospital2 .hospital-info-block {
+    margin-left: -15px;
+    margin-right: -15px;
+    border-bottom: 1px solid #d3d3d3;
+    padding: 45px 0 65px; }
+    .fa-hospital2 .hospital-info-block:before, .fa-hospital2 .hospital-info-block:after {
+      content: " ";
+      display: table; }
+    .fa-hospital2 .hospital-info-block:after {
+      clear: both; }
+    @media (min-width: 768px), print {
+      .fa-hospital2 .hospital-info-block {
+        padding: 25px 0 35px; } }
+    .fa-hospital2 .hospital-info-block > .marker {
+      position: relative;
+      float: left;
+      width: 5.5%;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px;
+      position: relative;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-right: 0;
+      overflow: hidden;
+      height: 27px;
+      position: static;
+      cursor: pointer; }
+      @media (min-width: 768px) {
+        .fa-hospital2 .hospital-info-block > .marker {
+          float: left;
+          width: 2.75%; } }
+      @media (min-width: 0px) and (max-width: 767px) {
+        .fa-hospital2 .hospital-info-block > .marker {
+          padding-left: 0px;
+          font-size: 80%; } }
+      @media (min-width: 768px), print {
+        .fa-hospital2 .hospital-info-block > .marker {
+          padding-left: 0px;
+          font-size: 80%; } }
+    .fa-hospital2 .hospital-info-block > .locale {
+      position: relative;
+      float: left;
+      width: 88.83333%;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px;
+      position: relative;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px; }
+      @media (min-width: 768px) {
+        .fa-hospital2 .hospital-info-block > .locale {
+          float: left;
+          width: 61.83333%; } }
+      .fa-hospital2 .hospital-info-block > .locale > h3, .fa-hospital2 .header .mobile-menus .mobile-pushdown .hospital-info-block > .locale > p[role="heading"], .header .mobile-menus .mobile-pushdown .fa-hospital2 .hospital-info-block > .locale > p[role="heading"] {
+        margin-bottom: 15px; }
+        .fa-hospital2 .hospital-info-block > .locale > h3:first-child, .fa-hospital2 .header .mobile-menus .mobile-pushdown .hospital-info-block > .locale > p[role="heading"]:first-child, .header .mobile-menus .mobile-pushdown .fa-hospital2 .hospital-info-block > .locale > p[role="heading"]:first-child {
+          line-height: 1; }
+      .fa-hospital2 .hospital-info-block > .locale > p {
+        line-height: 1.5; }
+      .fa-hospital2 .hospital-info-block > .locale > h5 {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        line-height: 1; }
+      .fa-hospital2 .hospital-info-block > .locale a {
+        display: inline-block;
+        text-decoration: none;
+        font-size: inherit;
+        font-weight: inherit; }
+        .fa-hospital2 .hospital-info-block > .locale a h3, .fa-hospital2 .hospital-info-block > .locale a .header .mobile-menus .mobile-pushdown p[role="heading"], .header .mobile-menus .mobile-pushdown .fa-hospital2 .hospital-info-block > .locale a p[role="heading"] {
+          color: #00468b; }
+    .fa-hospital2 .hospital-info-block > .info {
+      position: relative;
+      float: left;
+      width: 94.41667%;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-left: 5.5%;
+      position: relative;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px; }
+      @media (min-width: 768px) {
+        .fa-hospital2 .hospital-info-block > .info {
+          float: left;
+          width: 25%; } }
+      @media (min-width: 768px) {
+        .fa-hospital2 .hospital-info-block > .info {
+          margin-left: 0%; } }
+      .fa-hospital2 .hospital-info-block > .info > p.status {
+        margin-bottom: 1em;
+        font-weight: 600; }
+        @media (min-width: 0px) and (max-width: 767px) {
+          .fa-hospital2 .hospital-info-block > .info > p.status {
+            margin-top: 1em;
+            font-size: 18px;
+            font-size: 1.125rem; } }
+        @media (min-width: 768px), print {
+          .fa-hospital2 .hospital-info-block > .info > p.status {
+            font-size: 14pt; } }
+        .fa-hospital2 .hospital-info-block > .info > p.status.open {
+          color: #48a842; }
+        .fa-hospital2 .hospital-info-block > .info > p.status.closing {
+          color: #ffa400; }
+        .fa-hospital2 .hospital-info-block > .info > p.status.closed {
+          color: #bf1e2e; }
+      @media (min-width: 0px) and (max-width: 767px) {
+        .fa-hospital2 .hospital-info-block > .info table {
+          display: none; } }
+      .fa-hospital2 .hospital-info-block > .info table td {
+        font-family: "Open Sans", sans-serif; }
+        .fa-hospital2 .hospital-info-block > .info table td:first-child {
+          font-weight: 600;
+          padding-right: 20px; }
+      .fa-hospital2 .hospital-info-block > .info .categories {
+        margin-top: 15px; }
+        .fa-hospital2 .hospital-info-block > .info .categories > li {
+          display: inline-block;
+          margin-left: 10px; }
+          .fa-hospital2 .hospital-info-block > .info .categories > li:first-child {
+            margin-left: 0; }
+    .fa-hospital2 .hospital-info-block > .actions {
+      position: relative;
+      float: left;
+      width: 100%;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px;
+      position: relative;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px; }
+      @media (min-width: 768px) {
+        .fa-hospital2 .hospital-info-block > .actions {
+          float: left;
+          width: 10.41667%; } }
+      @media (min-width: 768px) {
+        .fa-hospital2 .hospital-info-block > .actions {
+          margin-left: 0%; } }
+      @media (min-width: 0px) and (max-width: 767px) {
+        .fa-hospital2 .hospital-info-block > .actions {
+          margin-top: 30px; } }
+      .fa-hospital2 .hospital-info-block > .actions ul {
+        margin-left: -15px;
+        margin-right: -15px; }
+        .fa-hospital2 .hospital-info-block > .actions ul:before, .fa-hospital2 .hospital-info-block > .actions ul:after {
+          content: " ";
+          display: table; }
+        .fa-hospital2 .hospital-info-block > .actions ul:after {
+          clear: both; }
+      .fa-hospital2 .hospital-info-block > .actions li {
+        position: relative;
+        float: left;
+        width: 33.33333%;
+        min-height: 1px;
+        padding-left: 15px;
+        padding-right: 15px;
+        position: relative;
+        min-height: 1px;
+        padding-left: 15px;
+        padding-right: 15px;
+        text-align: center; }
+        @media (min-width: 768px) {
+          .fa-hospital2 .hospital-info-block > .actions li {
+            float: left;
+            width: 50%; } }
+        .fa-hospital2 .hospital-info-block > .actions li:first-child {
+          margin-left: 0; }
+        .fa-hospital2 .hospital-info-block > .actions li a {
+          display: inline-block; }
+          @media (min-width: 0px) and (max-width: 767px) {
+            .fa-hospital2 .hospital-info-block > .actions li a {
+              width: 70%; } }
+          .fa-hospital2 .hospital-info-block > .actions li a .fa {
+            color: #d3d3d3;
+            font-size: 62px;
+            font-size: 3.875rem; }
+            @media (min-width: 768px), print {
+              .fa-hospital2 .hospital-info-block > .actions li a .fa {
+                font-size: 36px;
+                font-size: 2.25rem; } }
+          .fa-hospital2 .hospital-info-block > .actions li a:hover .fa, .fa-hospital2 .hospital-info-block > .actions li a:focus .fa {
+            color: #adadad; }
+  .fa-hospital2 .load-more {
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border-top: none; }
+
+main > .fa-hospital2 {
+  margin-left: -15px;
+  margin-right: -15px; }
+  main > .fa-hospital2:before, main > .fa-hospital2:after {
+    content: " ";
+    display: table; }
+  main > .fa-hospital2:after {
+    clear: both; }

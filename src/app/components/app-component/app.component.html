@@ -1,0 +1,43 @@
+<div class="module">
+  <header>
+    <form (ngSubmit)="onSearchSubmit()">
+        <h1><label for="searchLocation">Find a hospital:</label>
+          <p>Showing results for </p>
+          <p class="zipcode-label">{{resultsFor}}</p>
+        </h1>
+        <div class="form-group search-group">
+          <input name="searchLocation" [(ngModel)]="searchLocation" class="form-control search" type="text" placeholder="enter address, city or postal code">
+          <i class="fa fa-search"></i>
+        </div>
+    </form>
+    <div class="form-group search-group view-map">
+        <button (click)="onViewMapClick()">View Map</button>
+      </div>
+      <div>
+          <filter (notifyFilterChange)='onNotifyFilterChange($event)'></filter>
+      </div>
+  </header>
+  <div class="app-container">
+    <div class="app-map-container">
+        <map 
+          [lat]="lat" 
+          [lng]="lng" 
+          [Hospitals]="Hospitals"
+          [pinClicked]="pinClicked"
+          [clientHeight]="clientHeight"
+          [clientWidth]="clientWidth"
+          (notifyMarkerClicked)="onMapMarkerClick($event)"
+          (notifyViewListClicked) = "onNotifyViewListClicked()"
+          ></map>
+    </div>
+    <div class="listing-container">
+      <results-list 
+        [Hospitals]="Hospitals" 
+        [TotalResults]="TotalResults"
+        (notifyLoadMoreClick)='onNotifyLoadMoreClick($event)'
+        (notifyPinClicked)='onNotifyPinClicked($event)'
+        ></results-list>
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,48 @@
+.app-container {
+  height: 750px;
+  position: relative;
+  .app-map-container {
+    width: 35%;
+    float:left;
+    height: 100%;
+    position: relative;
+  }
+  .listing-container {
+    width: 65%;
+    float: right;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+  
+  @media (max-width: 768px) {
+
+    height: auto;
+    position: static;
+
+    .app-map-container, .listing-container {
+      float: none;
+    }
+    .app-map-container {
+      width: 0;
+      height: auto;
+    }
+    .listing-container {
+      width: auto;
+      height: auto;
+      overflow-y: auto;
+    }
+  }
+}
+
+.view-map {
+  display: none !important;
+
+  @media (max-width: 768px) {
+    display: block !important;
+    button {
+      display: block;
+      margin: auto;
+    }
+  }
+}

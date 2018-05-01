@@ -1,0 +1,31 @@
+<div class="map-container">
+  <button
+    (click)="onViewListClick()" 
+    [ngStyle]="{'top': clientHeight}" 
+    class="map-view-list animated">View List</button>
+  <agm-map
+    [latitude]="lat" 
+    [longitude]="lng" 
+    [fitBounds]="bounds"
+    [maxZoom]="14"
+    [ngStyle]="{'top': clientHeight, 'width': clientWidth}"
+    [ngClass]="{'animated' : clientHeightAnimated()}">
+    <agm-marker 
+      *ngFor="let hospital of Hospitals" 
+      [latitude]="hospital.Latitude" 
+      [longitude]="hospital.Longitude"
+      [label]="{text: hospital.Index, color: '#fff'}"
+      [iconUrl]="'/Includes/_images/custom-map-pin.png'"
+      (markerClick)="onMarkerClick(hospital.Index)" >
+      <agm-info-window>
+        <div id="{{hospital.Index}}">
+            <div>{{hospital.Name}}</div>
+            <div>{{hospital.AddressBlock1}}</div>
+            <div>{{hospital.AddressBlock2}} {{hospital.Zipcode}}</div>
+            <div><a href="tel:{{hospital.Phone}}">{{hospital.Phone}}</a></div>
+            <div>{{hospital.OpenStatusLabel}}</div>
+        </div>
+      </agm-info-window>
+    </agm-marker>
+  </agm-map>  
+</div>

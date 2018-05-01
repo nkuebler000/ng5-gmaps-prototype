@@ -1,0 +1,29 @@
+<div class="hospital-info-block hospital-info-block{{hospital.Index}}">
+    <div class="marker">
+       <div class="cc-marker pin-location" (click)="pinClick()" > <span >{{hospital.Index}}</span> </div>
+    </div>
+    <div class="locale">
+       <a href="{{hospital.Url}}">
+          <h3>{{hospital.Name}}</h3>
+       </a>
+       <h5><a href="tel:{{hospital.Phone}}">{{hospital.Phone}}</a></h5>
+       <p>{{hospital.AddressBlock1}}</p>
+       <p>{{hospital.AddressBlock2}} {{hospital.Zipcode}}</p>
+    </div>
+    <div class="info">
+       <p class="status closed">{{hospital.OpenStatusLabel}}</p>
+       <table class="hours">
+          <tbody>
+             <tr *ngFor="let hours of hospital.HoursOfOperation">
+                <td>{{hours.FormattedDayLabel}}</td>
+                <td>{{hours.FormattedOpenAndCloseTime}}</td>
+             </tr>
+          </tbody>
+       </table>
+       <ul class="categories" aria-hidden="true">
+          <li *ngFor="let hospitalTypesForDisplay of hospital.HospitalTypesForDisplay">
+              <span class="fa-badge">{{hospitalTypesForDisplay.DisplayValue}}</span>
+          </li>
+       </ul>
+    </div>
+ </div>

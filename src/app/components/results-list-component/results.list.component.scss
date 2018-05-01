@@ -1,0 +1,17 @@
+.load-more {
+  &.hidden {
+    display: none;
+  }
+}
+
+.no-results {
+  display: none;
+  &.visible {
+    display: block;
+  }
+}
+
+.no-results {
+  margin-left: 20px;
+  margin-right: 0;
+}
