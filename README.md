@@ -1,3 +1,6 @@
+
+Angular 5 prototype of a veterinary hospital search page.
+
 ![Desktop Breakpoint](https://github.com/nkuebler000/ng5-gmaps-prototype/blob/master/desktop1.png)
 
 
