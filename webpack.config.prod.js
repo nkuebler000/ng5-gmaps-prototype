@@ -13,6 +13,8 @@ const { NoEmitOnErrorsPlugin } = require('webpack');
 const { PostcssCliResources } = require('@angular/cli/plugins/webpack');
 const { CommonsChunkPlugin, UglifyJsPlugin } = require('webpack').optimize;
 const { AngularCompilerPlugin } = require('@ngtools/webpack');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin')
 
 const nodeModules = path.join(process.cwd(), 'node_modules');
 const realNodeModules = fs.realpathSync(nodeModules);
@@ -244,6 +246,10 @@ module.exports = {
     ]
   },
   "plugins": [
+    new webpack.DefinePlugin({
+      'process.env.NODE_ENV': JSON.stringify('production')
+    }),
+    new CleanWebpackPlugin(['dist-prod'], {}),
     new NoEmitOnErrorsPlugin(),
     new ProgressPlugin(),
     new CircularDependencyPlugin({
@@ -299,7 +305,15 @@ module.exports = {
       "tsConfigPath": "src/tsconfig.app.json",
       "skipCodeGeneration": true,
       "compilerOptions": {}
-    })
+    }),
+    new CopyWebpackPlugin([
+      { from: 'dev-server/providers/fah/index.html', to: 'index.html' },
+      { from: 'dev-server/providers/fah/bootstrap.css', to: 'bootstrap.css' },
+      { from: 'dev-server/providers/fah/app.css', to: 'app.css' },
+      { from: 'dev-server/providers/fah/font-awesome.min.css', to: 'font-awesome.min.css' },
+      { from: 'dev-server/providers/fah/main.js', to: 'main.js' },
+      { from: 'fonts/font-awesome', to: 'fonts/font-awesome' }
+    ], { debug: true })
   ],
   "node": {
     "fs": "empty",

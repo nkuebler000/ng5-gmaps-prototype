@@ -39,14 +39,14 @@ export class AppComponent implements OnInit {
     const userLng = window['FindAHospitalSettings']['UserLng'];
     this.setInitialMarket(userLat, userLng);
     this.resultsFor = this.initialMarket['Name'];
-    this.doSearch(this.initialMarket['Latitude'], this.initialMarket['Longitude'], 0);
+    this.doSearch(Number(this.initialMarket['Latitude']), Number(this.initialMarket['Longitude']), 0);
     this.geolocationService.getLocation({timeout: 3000, enableHighAccuracy: false, maximumAge: 0})
       .subscribe(geoLocationInfo => {
         console.log(geoLocationInfo);
         if (geoLocationInfo && geoLocationInfo.coords && geoLocationInfo.coords.latitude && geoLocationInfo.coords.longitude) {
           this.onUserGeolocated({
-            lat: geoLocationInfo.coords.latitude,
-            lng: geoLocationInfo.coords.longitude
+            lat: Number(geoLocationInfo.coords.latitude),
+            lng: Number(geoLocationInfo.coords.longitude)
           });
         }
       }, geoLocationErr => {
@@ -113,7 +113,7 @@ export class AppComponent implements OnInit {
         } else {
           this.setInitialMarket(coords.lat, coords.lng);
           this.resultsFor = this.initialMarket['Name'];
-          this.doSearch(this.initialMarket['Latitude'], this.initialMarket['Longitude'], 0);
+          this.doSearch(Number(this.initialMarket['Latitude']), Number(this.initialMarket['Longitude']), 0);
         }
       }
     });

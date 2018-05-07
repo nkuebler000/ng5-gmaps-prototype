@@ -48,6 +48,7 @@ module.exports = {
   },
   proxyUrls: [
     '/api/Search/HospitalSearch/GetHospitals',
-    '/Includes/_images/custom-map-pin.png'
+    '/Includes/_images/custom-map-pin.png',
+    '/includes/_images/gmaps-marker-smallcount.png'
   ]
 };

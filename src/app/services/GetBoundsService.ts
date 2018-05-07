@@ -12,12 +12,14 @@ export class GetBoundsService {
         return Observable.create(observer => {
             this.loader.load().then(() => {
                 try {
-                    const circleData = {
-                        center: { lat, lng },
-                        radius: radius * 1609.34
-                    };
-                    const boundingData = new google.maps.Circle(circleData).getBounds();
-                    observer.next(boundingData);
+                    if (lat && lng) {
+                        const circleData = {
+                            center: new google.maps.LatLng({ lat: lat, lng: lng }),
+                            radius: radius * 1609.34
+                        };
+                        const boundingData = new google.maps.Circle(circleData).getBounds();
+                        observer.next(boundingData);
+                    }
                     observer.complete();
                 } catch (error) {
                     observer.error('error getting bounds' + error);

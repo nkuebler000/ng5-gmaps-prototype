@@ -1,0 +1,239 @@
+<!DOCTYPE html><!--[if IE]><html xmlns="http://www.w3.org/1999/xhtml" lang="en" class="ie"><![endif]--><!--[if !IE]><!--><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><!--<![endif]--><head>
+        <title>Find A Hospital</title>
+    <meta name="description" content="">
+
+    <meta name="keywords" content="">
+
+
+
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Open Graph data: fallback for most social media service basic tags -->
+<meta property="og:title" content="Find A Hospital">
+    <meta property="og:type" content="website">
+<meta property="og:url" content="ca.cm.qa.preview.vca.webstagesite.com/find-a-hospital">
+<meta property="og:description" content="">
+<meta property="og:site_name" content="vca_canada_corporate">
+
+    <link href="bootstrap.css?v=636513463000000000" rel="stylesheet">
+        <link href="app.css?v=636607722238546654" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,800" rel="stylesheet">
+    
+<meta name="VIcurrentDateTime" content="636612440128302326">
+
+
+    
+
+
+
+    
+
+
+<script>
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+        'event': 'dataLayer-loaded',
+        'page': {
+            'hospital-name': '',
+            'hospital-au': '',
+            'hospital-type': 'Main',
+            'region-id': '',
+            'group-id': '',
+            'page-type':  'find a hospital landing page',
+            'page-variant': 'corporate',
+            'appt-tool': '',
+            'offer-variant': '',
+            'myvca-enabled': 'false'
+        },
+        'user': {
+            'userid': undefined,
+            'clientid': undefined,
+            'pet-profiles': '0'
+        }
+
+    });
+</script>
+
+</head>
+
+<body>
+    <script>
+        var VCA = VCA || {};
+        VCA.ContextSiteName = "vca_canada_corporate";
+        VCA.ContextVirtualFolder = "/";
+        VCA.HospitalId = "";
+    </script>
+
+    <!-- Return to Top -->
+    <a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
+
+    <script>
+    VCA.CurrentItemId = "9e12dc66-9543-4093-9526-1186e0545ddf";
+</script>
+
+
+    
+
+
+
+
+
+    
+
+
+
+
+    <section id="page-container" data-role="page">
+        <div class="container-fluid">
+            <div class="outer-wrapper">
+                <main id="Main" role="main">
+                    
+    
+
+    <div class="fa-hospital2"><app-root></app-root></div>
+    <script type="text/javascript">
+    var FindAHospitalSettings = {
+            LoadMoreCount: 7,
+            GetMoreCount: 7,
+            MaximumRadius: 50,
+            GMapsAPIKey: "AIzaSyDgnX1YnZyu8d1AlgBu6gNzol9CdWw15LQ",        
+            GMapCenterLat: 56.1304016113281,
+            GMapCenterLong: -106.346801757813,
+            InitialZoomSetting: 5,
+            MaxZoomOutSetting: 8,
+            CorpCountry: "{7C27B73C-3234-4026-B448-F9A5669FE0C4}",
+            InitialLocationSearchTerm: "",
+            HTML5Enabled: true
+        };
+
+    </script>
+
+                    
+
+    <div class="ajax-loader">
+        <div class="ajax-loader-wrapper">
+            <div class="ajax-loader-inner">
+                <img src="http://ca.cm.qa.preview.vca.webstagesite.com/-/media/vca/images/woofware/default.ashx?la=en&amp;hash=332919A0B406C0933BDB94FDF5B0DB2327CEEC8E" alt="Loading... Please wait">
+            </div>
+        </div>
+    </div>
+
+                </main>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="main.js?v=636610325320000000"></script>
+
+
+    
+
+
+
+
+
+
+
+
+<script>
+  //this needs to come from the CMS - used for filtering hospitals - already exists
+  FindAHospitalSettings.HospitalTypes = [
+    {
+      id: '16d0663f-0874-43e6-8511-481c0b8cef46',
+      text: 'All Hospitals',
+      badge: 'A'
+    },
+    {
+      id: 'f24ffaa3-babd-438f-a47a-e501ead66b43',
+      text: 'Primary Care',
+      badge: 'P'
+    },
+    {
+      id: '23ed4a38-36b9-4764-9a2d-21a542c711c8',
+      text: 'Specialty Care',
+      badge: 'S'
+    },
+    {
+      id: '1149c3f3-01c2-426f-8198-18582f89ebe2',
+      text: 'Emergency Care',
+      badge: 'E'
+    },
+    {
+      id: '676a3de6-1da1-4f0e-8808-05f2fd7d12af',
+      text: 'Boarding & Grooming',
+      badge: 'B'
+    },
+    {
+      id: '9ae50023-4f7c-44a4-bc67-4db786b75b0d',
+      text: 'Cat Only',
+      badge: 'C'
+    }
+  ];
+
+  //this needs to come from the back end - use VCA.Common.Constants.Settings.FindAHospital.AllHospitalsType
+  FindAHospitalSettings.AllHospitalsType = '16d0663f-0874-43e6-8511-481c0b8cef46';
+
+  //this needs to come from the CMS - used for suffixing the user's query to ensure that only canadian locations are displayed on the map
+  FindAHospitalSettings.Country = 'Canada';
+
+  //this needs to come from the CMS - used for the initial market to display 
+  //the haversine function is used to calculate the smallest distance between each market and the user's geoip located lat lng
+  //to hopefully display them an appropriate market when the page loads
+  FindAHospitalSettings.UserLat = 43.639217;
+  FindAHospitalSettings.UserLng = -79.400414;
+  FindAHospitalSettings.MajorMarkets = [
+    {
+      Name: 'Calgary, AB, Canada',
+      Latitude: 51.0501100,
+      Longitude: -114.0852900
+    },
+    {
+      Name: 'Edmonton, AB, Canada',
+      Latitude: 53.545883,
+      Longitude: -113.490112
+    },
+    {
+      Name: 'Vancouver, BC, Canada',
+      Latitude: 49.246292,
+      Longitude: -123.116226
+    },
+    {
+      Name: 'Victoria, BC, Canada',
+      Latitude: 48.407326,
+      Longitude: -123.329773
+    },
+    {
+      Name: 'London, ON, Canada',
+      Latitude: 42.988934,
+      Longitude: -81.248574
+    },
+    {
+      Name: 'Toronto, ON, Canada',
+      Latitude: 43.639217,
+      Longitude: -79.400414
+    },
+    {
+      Name: 'Ottawa, ON, Canada',
+      Latitude: 45.425533,
+      Longitude: -75.692482
+    },
+    {
+      Name: 'Saskatoon, SK, Canada',
+      Latitude: 52.132854,
+      Longitude: -106.631401
+    }
+  ];
+</script>
+<script type="text/javascript" src="inline.bundle.js"></script>
+<script type="text/javascript" src="polyfills.bundle.js"></script>
+<script type="text/javascript" src="styles.bundle.js"></script>
+<script type="text/javascript" src="vendor.bundle.js"></script>
+<script type="text/javascript" src="main.bundle.js"></script>
+
+
+</body></html>
