@@ -223,7 +223,6 @@ export class AppComponent implements OnInit {
       }).subscribe(placeData => {
           if (placeData) {
             this.setResultsFor(placeData.address_components);
-            console.log('onSearchSubmit placeData', placeData);
             this.doSearch(placeData.geometry.location.lat(), placeData.geometry.location.lng(), 0);
           }
         }, err => {
