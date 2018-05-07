@@ -1,0 +1,15 @@
+{
+  "apps" : [{
+    "name"        : "ng5-gmaps-prototype",
+    "script"      : "/webapp2/dev-server/stg-server.js",
+    "args"		  : "--host=https://vcacanada.com --provider=providers/fah/provider.js --port=3108",
+    "watch"       : ["/webapp2"],
+    "ignore_watch" : ["/webapp2/node_modules"],
+    "watch_options": {
+      "followSymlinks": false
+    },
+    "env": {
+      "NODE_ENV": "development"
+    }
+  }]
+}
